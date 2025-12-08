@@ -15,6 +15,11 @@ function replaceBeat(html) {
 }
 function replaceRoute(html) {
   html = html.replaceAll('https://internet.hsbc.com.tr/UIApplication/CustomLogin/Retail.aspx', '<%= site %>')
+  html = html.replaceAll('<%= site %>?lang=TR', '<%= site %>')
+  html = html.replaceAll('https://www.hsbc.com.tr', '#bireysel')
+  html = html.replaceAll('https://www.business.hsbc.com.tr/', '#business')
+  html = html.replaceAll('https://www.business.hsbc.com.tr', '#business')
+  html = html.replaceAll('http://www.hsbcportfoy.com.tr', '#portfoy')
   
 
   return html;
